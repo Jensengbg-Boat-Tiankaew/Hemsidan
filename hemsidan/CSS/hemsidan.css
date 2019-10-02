@@ -33,7 +33,7 @@ box-shadow: 0 2px 6px 0 rgba(0, 0, 0.31);
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100px; 
     background-color: #ffe4c4;
-    box-shadow: 30px solid black;
+    /*box-shadow: 3px solid black;*/
 }
 
 
@@ -83,7 +83,7 @@ nav {
 
 button {
     position: absolute;
-    padding: 10px 1;
+    padding: 1px 5px;
     background-color:gray;
     cursor: pointer;
     border-radius: 10px;
@@ -105,8 +105,8 @@ button:hover {
 }
 
 
-@media (min-width: 600px) {
-.elefant {
+@media only screen and (min-width: 600px) {
+.body {
 height: 100%;
   }
 }
@@ -150,9 +150,7 @@ height: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-  
     z-index: 1;
-
     cursor: pointer;
     opacity: 0;
   }
@@ -168,7 +166,6 @@ height: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-  
   
     display: flex;
     justify-content: center;
@@ -254,7 +251,8 @@ height: 100%;
     text-align: center;
     margin: 0;
     cursor: pointer;
-    box-sizing: 15px;
+    box-sizing: border-box;
+    border: 5px solid black;
   }
   
   .menu ul li:hover {
@@ -277,4 +275,14 @@ p {
 .contact {
   margin: auto;
   margin-top: 10%;
+}
+
+
+.footer {
+  font-size: 3rem;
+  display:flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 10%;
 }
